@@ -1,0 +1,187 @@
+/*-----Fonts------ */
+@font-face{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Black.ttf");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Thin.ttf");
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: url("../fonts/Roboto/Roboto-Light.ttf");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "PayFair";
+    src: url("../fonts/PayFairDisplay/PlayfairDisplay-Black.ttf");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: "HammerSmith";
+    src: url("../fonts/HummerSmithOne/HammersmithOne-Regular.ttf");
+}
+/*Общие стили*/
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", 'Times New Roman', serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button{
+    display: inline-block;
+    border: 1px solid #00e0d0;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin-top: 20px;
+
+    font-family: "HammerSmith";
+    font-size: 18px;
+    color: #00e0d0;
+
+    transition: all .25s ease;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+
+    background: transparent;
+
+    box-shadow: 0 0px 10px 0 #2497a3;
+}
+
+.button:hover{
+    box-shadow: 0 0 7px 4px #2497a3;
+}
+
+.button:active{
+    box-shadow: 0 0 15px 4px #2a9aa7;
+}
+
+/* Header */
+
+header{
+    min-height:640px;
+
+    background: url("../img/BackgroundNavigation.jpg");
+} 
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+nav{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+    padding-top: 14px;
+}
+
+.logo-link{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    transition: opacity ease-in-out 0.25s;
+    -webkit-transition: opacity ease-in-out 0.25s;
+    -moz-transition: opacity ease-in-out 0.25s;
+    -ms-transition: opacity ease-in-out 0.25s;
+    -o-transition: opacity ease-in-out 0.25s;
+    
+    opacity: 0.8;
+}
+
+.logo-link:hover{
+    opacity: 1;
+}
+
+.logo-link span{
+    padding-left: 11px;
+
+    font-size: 30px;
+    font-weight: 100;
+    color: #2497a3;
+}
+
+.navigation-list{
+    display: flex;
+    justify-content: space-around;
+    width: 540px;
+}
+
+.navigation-item a{
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 13px;
+    color: #fff;
+    
+    transition: all ease-in-out 0.25s;
+    -webkit-transition: all ease-in-out 0.25s;
+    -moz-transition: all ease-in-out 0.25s;
+    -ms-transition: all ease-in-out 0.25s;
+    -o-transition: all ease-in-out 0.25s;
+}
+
+.navigation-list a:hover{
+    opacity: 0.5;
+}
+
+.navigation-list a:focus,
+a.active{
+    color: #0cc5bc;
+}
+
+.content{
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    height: 574px;
+    margin: 0 auto;
+
+    color: #fff;
+}
+
+.content h1{
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-family: "PayFair";
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.content p{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.content hr{
+    width: 58px;
+
+    color: #00e0d0;
+}
