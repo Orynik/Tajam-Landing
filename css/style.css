@@ -3,41 +3,41 @@
     font-family: "Roboto";
     src: url("../fonts/Roboto/Roboto-Black.ttf");
     font-weight: 700;
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face{
     font-family: "Roboto";
     src: url("../fonts/Roboto/Roboto-Thin.ttf");
     font-weight: 100;
-    font-display: auto;
+    font-display: fallback;
 }
 
 @font-face{
     font-family: "Roboto";
     src: url("../fonts/Roboto/Roboto-Light.ttf");
     font-weight: 400;
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face{
     font-family: "PayFair";
     src: url("../fonts/PayFairDisplay/PlayfairDisplay-Black.ttf");
     font-weight: 700;
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face{
     font-family: "PayFair";
     src: url("../fonts/PayFairDisplay/PlayfairDisplay-Bold.ttf");
     font-weight: 600;
-    font-display: auto;
+    font-display: swap;
 }
 
 @font-face{
     font-family: "HammerSmith";
     src: url("../fonts/HummerSmithOne/HammersmithOne-Regular.ttf");
-    font-display: auto;
+    font-display: swap;
 }
 
 /*Общие стили*/
