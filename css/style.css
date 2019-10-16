@@ -10,21 +10,14 @@
     font-family: "Roboto";
     src: url("../fonts/Roboto/Roboto-Thin.ttf");
     font-weight: 100;
-    font-display: fallback;
+    font-display: swap;
 }
 
 @font-face{
     font-family: "Roboto";
     src: url("../fonts/Roboto/Roboto-Light.ttf");
     font-weight: 400;
-    font-display: swap;
-}
-
-@font-face{
-    font-family: "PayFair";
-    src: url("../fonts/PayFairDisplay/PlayfairDisplay-Black.ttf");
-    font-weight: 700;
-    font-display: swap;
+    font-display: fallback;
 }
 
 @font-face{
@@ -192,7 +185,7 @@ a.active:focus{
 
     font-family: "PayFair";
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .content p{
