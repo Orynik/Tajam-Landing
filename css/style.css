@@ -28,10 +28,18 @@
 }
 
 @font-face{
+    font-family: "PayFair";
+    src: url("../fonts/PayFairDisplay/PlayfairDisplay-Bold.ttf");
+    font-weight: 600;
+    font-display: auto;
+}
+
+@font-face{
     font-family: "HammerSmith";
     src: url("../fonts/HummerSmithOne/HammersmithOne-Regular.ttf");
     font-display: auto;
 }
+
 /*Общие стили*/
 body{
     box-sizing: border-box;
@@ -67,16 +75,14 @@ a{
     -o-transition: all .25s ease;
 
     background: transparent;
-
-    box-shadow: 0 0px 10px 0 #2497a3;
 }
 
 .button:hover{
-    box-shadow: 0 0 7px 4px #2497a3;
+    box-shadow: 0 0px 10px 0 #2497a3;
 }
 
 .button:active{
-    box-shadow: 0 0 15px 4px #2a9aa7;
+    box-shadow: 0 0 7px 4px #2497a3;
 }
 
 /* Header */
@@ -146,12 +152,24 @@ nav{
 }
 
 .navigation-list a:hover{
+    color: #0cc5bc;
+}
+
+.navigation-list a:focus{
+    color: #0cc5bc;
     opacity: 0.5;
 }
 
-.navigation-list a:focus,
-a.active{
-    color: #0cc5bc;
+a.active,
+a.active:hover,
+a.active:focus{
+    border-bottom: 1px solid #0cc5bc;
+    padding-bottom: 10px;
+
+    color: #fff;
+
+    opacity: 1;
+    cursor: default;
 }
 
 .content{
@@ -189,4 +207,76 @@ a.active{
     width: 58px;
 
     color: #00e0d0;
+}
+
+/* About us */
+
+.about-us-text{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 402px;
+}
+
+.about-us h2{
+    font-family: "PayFair";
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.about-us p{
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.div-logo{
+    margin-right: 80px;
+}
+
+.about-us-video{
+    position: relative;
+
+    height: 100%;
+}
+
+.about-us-video video{
+    width: 100%;
+    height: 490px;
+}
+
+.play{
+    position: absolute;
+    top: 219px;
+    left: 600px;
+}
+
+.play-text{
+    display: block;
+    width: 170.933px;
+    height: 22px;
+    padding-top: 26px;
+
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+
+    text-align: center;
+}
+
+.play-button{
+    display: block;
+    margin: 0 auto;
+
+    width: 100px;
+    height: 100px;
+    background: url("../img/Play.png");
+
+    cursor: pointer;
+}
+
+.controlBar{
+    display: none;
 }
