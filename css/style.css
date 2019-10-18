@@ -242,6 +242,8 @@ a.active:focus{
     margin-right: 80px;
 }
 
+/* About-us video */
+
 .about-us-video{
     position: relative;
     
@@ -288,6 +290,8 @@ a.active:focus{
     cursor: pointer;
 }
 
+/* Expertise */
+
 .expertise{
     display: flex;
     flex-direction: column;
@@ -301,7 +305,7 @@ a.active:focus{
     margin-bottom: 50px;
 }
 
-.describe-title{
+.expertise-title{
     margin-bottom: 10px;
 
     font-family: "PayFair";
@@ -311,14 +315,14 @@ a.active:focus{
     text-align: center;
 }
 
-.describe-text{
+.expertise-text{
     font-family: "PayFair";
     font-size: 14px;
     font-weight: 200;
     letter-spacing: 1px;
 }
 
-.describe-hr{
+.expertise-hr{
     margin-top: 18px;
     width: 50px;
 
@@ -390,4 +394,120 @@ a.active:focus{
     line-height: 22px;
     font-size: 14px;
     font-weight: 400;
+}
+
+/* Our workers */
+
+.team{
+    height: 630px;
+    padding-top: 70px;
+
+    background: url("../img/BackgroundTeam.jpg");
+
+    text-align: center;
+}
+
+.team-describe{
+    margin-bottom: 47px;
+
+    text-align: center;
+}
+
+.team-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    font-family: "PayFair";
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.team-text{
+    font-family: "PayFair";
+    font-size: 14px;
+    font-weight: 200;
+    color: #fff;
+
+    letter-spacing: 1px;
+}
+
+.team-hr{
+    margin-top: 18px;
+    border-top: 1px solid #655c80;;
+
+    color: #655c80;
+    width: 50px;
+}
+
+.team-cards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.team-card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 218px;
+    height: 306px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.team-card:first-child{
+    margin-left: 0px;
+}
+
+.team-card:last-child{
+    margin-right: 0px;
+}
+
+.team-card-img{
+    flex-grow: 1;
+
+    background: #f4f4f6;
+}
+
+.team-card-info{
+    width: 220px;
+    height: 62px;
+    padding-top: 18px;
+    border: 1px solid #767589;
+
+    background: transparent;
+}
+
+.team-card-name,
+.team-card-post{
+    display: block;
+    width: 100%;
+
+    text-align: center;
+}
+
+.team-card-name{
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.team-card-post{
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.invite-in-team{
+    display: block;
+    margin-bottom: 6px;
+
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
 }
