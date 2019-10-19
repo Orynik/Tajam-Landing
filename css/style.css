@@ -298,7 +298,7 @@ a.active:focus{
     align-items: center;
     justify-items: center;
     height: 735px;
-    margin-top: 43px;
+    padding-top: 43px;
 }
 
 .expertise-describe{
@@ -515,4 +515,106 @@ a.active:focus{
     font-size: 14px;
     font-weight: 400;
     color: #fff;
+}
+
+.our-work-text{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 39px;
+    margin-top: 39px;
+}
+
+.our-work-title{
+    margin: 0;
+
+    font-family: "PayFair";
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.our-work-show{
+    position: relative;
+    align-self: center;
+
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.our-work-show::before{
+    position: absolute;
+    top: 3px;
+    right: -10px;
+    content: "";
+    width: 1px;
+    height: 7px;
+    transform: rotate(-45deg);
+    background: #000;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.our-work-show::after{
+    position: absolute;
+    top: 7px;
+    right: -10px;
+    content: "";
+    width: 1px;
+    height: 7px;
+    transform: rotate(45deg);
+    background: #000;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.our-work-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.our-work-card-img{
+    display: block;
+    width: 237px;
+    height: 200px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+
+    object-fit: fill;
+}
+
+.card-1,.card-5,
+.card-8,.card-12{
+    background: #b6b6b6;
+}
+
+.card-4,.card-9{
+    background: #8a8a8a;
+}
+
+.card-3,.card-10{
+    background: #a1a1a1;
+}
+
+.card-2,.card-11{
+    background: #acacac;
+}
+
+.card-6,.card-7{
+    background: #a4a4a4;
+}
+
+.cards-button{
+    display: block;
+    width: 140px;
+    margin: 59px auto;
+
+    text-align: center;
 }
