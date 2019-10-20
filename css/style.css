@@ -41,10 +41,8 @@
     font-weight: 200;
     font-display: swap;
 }
-
 /*Общие стили*/
 body{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 
@@ -630,6 +628,7 @@ a.active:focus{
     align-items: center;
     height: 500px;
     padding-top: 43px;
+    padding-bottom: 70px;
 
     color: #fff;
 
@@ -704,10 +703,6 @@ a.active:focus{
     height: 70px;
 }
 
-.reviewer-avatar{
-    margin-bottom: 69px;
-}
-
 .swap-left,
 .swap-right{
     position: relative;
@@ -779,4 +774,96 @@ a.active:focus{
     -moz-transform: rotate(48deg);
     -ms-transform: rotate(48deg);
     -o-transform: rotate(48deg);
+}
+
+/* Contact */
+
+.contact{
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    height: 653px;
+    padding-top: 70px;
+}
+
+.form-title{
+    margin-top: 0;
+    margin-bottom: 30px;
+
+    font-family: "PayFair";
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.contact-with-us{
+    width: 460px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input{
+    height: 45px;
+    margin-bottom: 23px;
+    padding-left: 20px;
+    padding-top: 0;
+    border: 1px solid #e5e5e5;
+
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    color: #413d4b;
+}
+
+textarea{
+    box-sizing: border-box  ;
+
+    max-width: 460px;
+    min-width: 460px;
+    height: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    padding-top: 15px;
+    padding-left: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+input,
+textarea{
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    color: #413d4b;
+}
+
+.form-button{
+    width: 120px;
+}
+
+.client-logos{
+    display: grid;
+    grid-template-columns: 160px 160px;
+    grid-template-rows: 53px 77px 86px 72px 129px;
+    grid-column-gap: 60px;
+    grid-row-gap: 10px;
+    width: 380px;
+}
+
+.client-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.client-logo img{
+    display: inline-block;
+    margin: 0 auto;
+    width: 160px;
+
+    object-fit: none;
 }
