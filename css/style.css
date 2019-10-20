@@ -618,3 +618,165 @@ a.active:focus{
 
     text-align: center;
 }
+
+/* Reviews */
+
+.review{    
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding-top: 43px;
+
+    color: #fff;
+
+    text-align: center;
+
+    background: url("../img/BackgroundTestimonials.jpg");
+}
+
+.reviewer-text{
+    position: relative;
+
+    margin-top: 120px;
+    margin-bottom: 50px;
+
+    font-family: "PayFair";
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 200;
+}
+
+.reviewer-text::before{
+    content: "";
+
+    position: absolute;
+    top: -70px;
+    left: 48%;
+
+    width: 32px;
+    height: 26px;
+
+    background: url("../img/Apostrophe.png");
+
+}
+
+.reviewer-info{
+    margin-bottom: 51px;
+}
+
+.reviewer-name{
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+.reviewer-post{
+    font-family: "Roboto";
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.reviewer-avatar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 390px;
+}
+
+.reviewer-avatar img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.reviewer-avatar .active{
+    width: 70px;
+    height: 70px;
+}
+
+.reviewer-avatar{
+    margin-bottom: 69px;
+}
+
+.swap-left,
+.swap-right{
+    position: relative;
+
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.swap-left{
+    margin-right: 10px;
+}
+
+.swap-right{
+    margin-left: 10px;
+}
+
+.swap-left::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    width: 1px;
+    height: 15px;
+    background: #fff;
+    transform: rotate(48deg);
+    -webkit-transform: rotate(48deg);
+    -moz-transform: rotate(48deg);
+    -ms-transform: rotate(48deg);
+    -o-transform: rotate(48deg);
+}
+
+.swap-left::after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 1px;
+    height: 15px;
+    background: #fff;
+    transform: rotate(-48deg);
+    -webkit-transform: rotate(-48deg);
+    -moz-transform: rotate(-48deg);
+    -ms-transform: rotate(-48deg);
+    -o-transform: rotate(-48deg);
+}
+
+.swap-right::before{
+    content: "";
+    position: absolute;
+    top: -2px;
+    width: 1px;
+    height: 15px;
+    background: #fff;
+    transform: rotate(-48deg);
+    -webkit-transform: rotate(-48deg);
+    -moz-transform: rotate(-48deg);
+    -ms-transform: rotate(-48deg);
+    -o-transform: rotate(-48deg);
+}
+
+.swap-right::after{
+    content: "";
+    position: absolute;
+    top: 8px;
+    width: 1px;
+    height: 15px;
+    background: #fff;
+    transform: rotate(48deg);
+    -webkit-transform: rotate(48deg);
+    -moz-transform: rotate(48deg);
+    -ms-transform: rotate(48deg);
+    -o-transform: rotate(48deg);
+}
