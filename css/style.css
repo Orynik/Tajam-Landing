@@ -289,7 +289,7 @@ a.active:focus{
 
     width: 100px;
     height: 100px;
-    background: url("../img/icon/Play.png");
+    background: url("../img/Other/Play.png");
 
     cursor: pointer;
 }
@@ -357,22 +357,22 @@ a.active:focus{
 }
 
 .item-1{
-    background: url("../img/Icon/Expertise/PC.png") no-repeat 50% 33px;
+    background: url("../img/Expertise/PC.png") no-repeat 50% 33px;
 }
 .item-2{
-    background: url("../img/Icon/Expertise/Tassel.png") no-repeat 50% 33px;
+    background: url("../img/Expertise/Tassel.png") no-repeat 50% 33px;
 }
 .item-3{
-    background: url("../img/Icon/Expertise/Phone.png") no-repeat 50% 33px;
+    background: url("../img/Expertise/Phone.png") no-repeat 50% 33px;
 }
 .item-4{
-    background: url("../img/Icon/Expertise/Diagram.png") no-repeat 50% 33px;
+    background: url("../img/Expertise/Diagram.png") no-repeat 50% 33px;
 }
 .item-5{
-    background: url("../img/Icon/Expertise/GameBoy.png") no-repeat 50% 33px;
+    background: url("../img/Expertise/GameBoy.png") no-repeat 50% 33px;
 }
 .item-6{
-    background: url("../img/Icon/Expertise/Heart.png") no-repeat 50% 33px;
+    background: url("../img/Expertise/Heart.png") no-repeat 50% 33px;
 }
 
 .expertise-about-item{
@@ -667,7 +667,7 @@ a.active:focus{
     width: 32px;
     height: 26px;
 
-    background: url("../img/icon/Apostrophe.png");
+    background: url("../img/Other/Apostrophe.png");
 
 }
 
@@ -950,7 +950,7 @@ textarea{
     width: 14px;
     height: 19px;
 
-    background: url("../img/Icon/FooterIcon/Location.png") no-repeat;
+    background: url("../img/FooterIcon/Location.png") no-repeat;
 }
 
 .location-tel::before{
@@ -963,7 +963,7 @@ textarea{
     width: 17px;
     height: 17px;
 
-    background: url("../img/Icon/FooterIcon/Phone.png") no-repeat;
+    background: url("../img/FooterIcon/Phone.png") no-repeat;
 }
 
 .newsletter-mailing{
@@ -990,7 +990,7 @@ textarea{
     height: 48px;
     border: none;
 
-    background: url("../img/Icon/FooterIcon/Paper.png") 21px 12px no-repeat, #a199b3;
+    background: url("../img/FooterIcon/Paper.png") 21px 12px no-repeat, #a199b3;
 
     opacity: 0.75;
 }
@@ -1018,27 +1018,27 @@ textarea{
 }
 
 .social-icon:nth-child(6){
-    background: url("../img/Icon/Social/Youtube.png") 9px 11px no-repeat;
+    background: url("../img/Social/Youtube.png") 9px 11px no-repeat;
 }
 
 .social-icon:nth-child(5){
-    background: url("../img/Icon/Social/google.png") 11px 10px no-repeat;
+    background: url("../img/Social/google.png") 11px 10px no-repeat;
 }
 
 .social-icon:nth-child(4){
-    background: url("../img/Icon/Social/Instagram.png") 10px 10px no-repeat;
+    background: url("../img/Social/Instagram.png") 10px 10px no-repeat;
 }
 
 .social-icon:nth-child(3){
-    background: url("../img/Icon/Social/Dribbble.png") 9px 9px no-repeat;
+    background: url("../img/Social/Dribbble.png") 9px 9px no-repeat;
 }
 
 .social-icon:nth-child(2){
-    background: url("../img/Icon/Social/Twitter.png") 11px 11px no-repeat;
+    background: url("../img/Social/Twitter.png") 11px 11px no-repeat;
 }
 
 .social-icon:nth-child(1){
-    background: url("../img/Icon/Social/Facebook.png") 13px 9px no-repeat;
+    background: url("../img/Social/Facebook.png") 13px 9px no-repeat;
 }
 
 .footer-help{
