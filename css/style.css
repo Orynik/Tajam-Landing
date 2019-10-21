@@ -95,7 +95,8 @@ header{
     position: static;
     min-height:640px;
 
-    background: url("../img/Backgrounds/BackgroundNavigation.jpg");
+    background: url("../img/Backgrounds/BackgroundNavigation.jpg") no-repeat;
+    background-size: cover;
 } 
 
 .wrapper{
@@ -410,7 +411,8 @@ a.active:focus{
     height: 630px;
     padding-top: 70px;
 
-    background: url("../img/Backgrounds/BackgroundTeam.jpg");
+    background: url("../img/Backgrounds/BackgroundTeam.jpg") no-repeat;
+    background-size: cover;
 
     text-align: center;
 }
@@ -639,7 +641,8 @@ a.active:focus{
 
     text-align: center;
 
-    background: url("../img/Backgrounds/BackgroundTestimonials.jpg");
+    background: url("../img/Backgrounds/BackgroundTestimonials.jpg") no-repeat;
+    background-size: cover;
 }
 
 .reviewer-text{
@@ -881,6 +884,7 @@ textarea{
     height: 400px;
 
     background: url("../img/Backgrounds/BackgroundFooter.jpg") no-repeat;
+    background-size: cover;
 }
 
 .main-footer-grid{
