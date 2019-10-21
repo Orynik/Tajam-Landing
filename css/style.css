@@ -34,7 +34,6 @@
     font-display: swap;
 }
 
-
 @font-face{
     font-family: "HammerSmith";
     src: url("../fonts/HummerSmithOne/HammersmithOne-Regular.ttf");
@@ -47,6 +46,11 @@ body{
     padding: 0;
 
     font-family: "Roboto", 'Times New Roman', serif;
+}
+
+.visually-hidden{
+    font-size: 0;
+    line-height: 0;
 }
 
 ul{
@@ -91,7 +95,7 @@ header{
     position: static;
     min-height:640px;
 
-    background: url("../img/BackgroundNavigation.jpg");
+    background: url("../img/Backgrounds/BackgroundNavigation.jpg");
 } 
 
 .wrapper{
@@ -125,7 +129,7 @@ nav{
     opacity: 1;
 }
 
-.logo-link span{
+.logo-name{
     padding-left: 11px;
 
     font-size: 30px;
@@ -257,6 +261,7 @@ a.active:focus{
 
 .play{
     position: absolute;
+    z-index: 1;
     top: 219px;
     left: 600px;
     right: 600.067px;
@@ -283,7 +288,7 @@ a.active:focus{
 
     width: 100px;
     height: 100px;
-    background: url("../img/Play.png");
+    background: url("../img/icon/Play.png");
 
     cursor: pointer;
 }
@@ -351,22 +356,22 @@ a.active:focus{
 }
 
 .item-1{
-    background: url("../img/Icon/PC.png") no-repeat 50% 33px;
+    background: url("../img/Icon/Expertise/PC.png") no-repeat 50% 33px;
 }
 .item-2{
-    background: url("../img/Icon/Tassel.png") no-repeat 50% 33px;
+    background: url("../img/Icon/Expertise/Tassel.png") no-repeat 50% 33px;
 }
 .item-3{
-    background: url("../img/Icon/Phone.png") no-repeat 50% 33px;
+    background: url("../img/Icon/Expertise/Phone.png") no-repeat 50% 33px;
 }
 .item-4{
-    background: url("../img/Icon/Diagram.png") no-repeat 50% 33px;
+    background: url("../img/Icon/Expertise/Diagram.png") no-repeat 50% 33px;
 }
 .item-5{
-    background: url("../img/Icon/GameBoy.png") no-repeat 50% 33px;
+    background: url("../img/Icon/Expertise/GameBoy.png") no-repeat 50% 33px;
 }
 .item-6{
-    background: url("../img/Icon/Heart.png") no-repeat 50% 33px;
+    background: url("../img/Icon/Expertise/Heart.png") no-repeat 50% 33px;
 }
 
 .expertise-about-item{
@@ -405,7 +410,7 @@ a.active:focus{
     height: 630px;
     padding-top: 70px;
 
-    background: url("../img/BackgroundTeam.jpg");
+    background: url("../img/Backgrounds/BackgroundTeam.jpg");
 
     text-align: center;
 }
@@ -634,7 +639,7 @@ a.active:focus{
 
     text-align: center;
 
-    background: url("../img/BackgroundTestimonials.jpg");
+    background: url("../img/Backgrounds/BackgroundTestimonials.jpg");
 }
 
 .reviewer-text{
@@ -659,7 +664,7 @@ a.active:focus{
     width: 32px;
     height: 26px;
 
-    background: url("../img/Apostrophe.png");
+    background: url("../img/icon/Apostrophe.png");
 
 }
 
@@ -866,4 +871,190 @@ textarea{
     width: 160px;
 
     object-fit: none;
+}
+
+/* Footer */
+
+.main-footer{
+    box-sizing: border-box;
+    
+    height: 400px;
+
+    background: url("../img/Backgrounds/BackgroundFooter.jpg") no-repeat;
+}
+
+.main-footer-grid{
+    box-sizing: border-box;
+
+    display: grid;
+    grid-template-columns: 300px 310px 330px;
+    grid-template-rows: 266px 64px;
+    padding-top: 70px;
+
+    color: #fff;
+}
+
+.footer-logo{
+    margin-bottom: 25px;
+}
+
+.footer-about-text{
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.footer-title{
+    margin-top: 13px;
+    margin-bottom: 35px;
+
+    font-family: "Roboto";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.location-info,
+.location-tel{
+    position: relative;
+
+    display: block;
+    padding-left: 30px;
+
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.footer-location{
+    justify-self: center;
+}
+
+.location-info{
+    margin-bottom: 6px;
+}
+
+.location-info::before{
+    content: "";
+    
+    position: absolute;
+    top: 3px;
+    left: 0;
+    
+    width: 14px;
+    height: 19px;
+
+    background: url("../img/Icon/FooterIcon/Location.png") no-repeat;
+}
+
+.location-tel::before{
+    content: "";
+    
+    position: absolute;
+    top: 3px;
+    left: 0;
+    
+    width: 17px;
+    height: 17px;
+
+    background: url("../img/Icon/FooterIcon/Phone.png") no-repeat;
+}
+
+.newsletter-mailing{
+    display: flex;
+}
+
+.newsletter-input{
+    width: 211px;
+    height: 45px;
+    border: 1px solid #9f98b1;
+
+    line-height: 26px;
+    color: #fff;
+
+    background: transparent;
+}
+
+.newsletter-submit{
+    padding: 0;
+    padding-bottom: 1px;
+    margin-left: 10px;
+
+    width: 70px;
+    height: 48px;
+    border: none;
+
+    background: url("../img/Icon/FooterIcon/Paper.png") 21px 12px no-repeat, #a199b3;
+
+    opacity: 0.75;
+}
+
+.social-icon{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+
+    transition: opacity 0.4s ease;
+    -webkit-transition: opacity 0.4s ease;
+    -moz-transition: opacity 0.4s ease;
+    -ms-transition: opacity 0.4s ease;
+    -o-transition: opacity 0.4s ease;
+}
+
+.social-icon:hover{
+    opacity: 0.5;
+}
+
+.social-icon:nth-child(6){
+    background: url("../img/Icon/Social/Youtube.png") 9px 11px no-repeat;
+}
+
+.social-icon:nth-child(5){
+    background: url("../img/Icon/Social/google.png") 11px 10px no-repeat;
+}
+
+.social-icon:nth-child(4){
+    background: url("../img/Icon/Social/Instagram.png") 10px 10px no-repeat;
+}
+
+.social-icon:nth-child(3){
+    background: url("../img/Icon/Social/Dribbble.png") 9px 9px no-repeat;
+}
+
+.social-icon:nth-child(2){
+    background: url("../img/Icon/Social/Twitter.png") 11px 11px no-repeat;
+}
+
+.social-icon:nth-child(1){
+    background: url("../img/Icon/Social/Facebook.png") 13px 9px no-repeat;
+}
+
+.footer-help{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-help a{
+    font-family: "Roboto";
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.copyright{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    justify-self: end;
 }
