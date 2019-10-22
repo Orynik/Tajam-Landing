@@ -180,16 +180,21 @@ a.active:focus{
 
 .content{
     position: relative;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 900px;
-    height: 574px;
+    height: 560px;
     margin: 0 auto;
-
+    transition: all 0.5s ease-in-out;
     color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
 .content h1{
@@ -213,6 +218,69 @@ a.active:focus{
     width: 58px;
 
     color: #00e0d0;
+}
+
+.slider li {
+    position: absolute;
+
+}
+.slider input {
+    display: none;
+}
+
+.slider label {
+    position: absolute;
+    bottom: 70px;
+    left: 0px;
+    z-index: 10;
+
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+
+    background-color: transparent;
+
+    cursor: pointer;
+}
+
+.slider li:nth-child(1) label {
+    left: 412px;
+}
+.slider li:nth-child(2) label {
+    left: 433px;
+}
+.slider li:nth-child(3) label {
+    left: 454px;
+}
+.slider li:nth-child(4) label {
+    left: 475px;
+}
+
+.slider li input:checked ~ .content{
+    opacity: 1;
+    visibility: visible;
+}
+
+.slider li input:checked ~ label::before{
+    content: "";
+    position: absolute;
+    z-index: 15;
+    left: -1px;
+    top: -1px;
+
+    width: 17px;
+    height: 17px;
+    border-radius:50%;
+
+    background: #00e0d0;
 }
 
 /* About us */
