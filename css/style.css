@@ -264,8 +264,11 @@ a.active:focus{
     position: absolute;
     z-index: 1;
     top: 219px;
-    left: 600px;
-    right: 600.067px;
+    left: 0;
+    right: 0;
+    width: 164px;
+    height: 152px;
+    margin: 0 auto;
 }
 
 .play-text{
@@ -479,6 +482,8 @@ a.active:focus{
     flex-grow: 1;
 
     background: #f4f4f6;
+
+    object-fit: fill;
 }
 
 .team-card-info{
@@ -586,33 +591,35 @@ a.active:focus{
 
 .our-work-card-img{
     display: block;
-    width: 237px;
-    height: 200px;
+    flex-basis: 222px;
+    flex-grow: 1;
+    max-width: 350px;
+    height: 400px;
     padding: 0;
-    margin: 0;
+    margin: 0;  
     border: 0;
 
     object-fit: fill;
 }
 
-.card-1,.card-5,
-.card-8,.card-12{
+.card-1[src = ""],.card-5[src = ""],
+.card-8[src = ""],.card-12[src = ""]{
     background: #b6b6b6;
 }
 
-.card-4,.card-9{
+.card-4[src = ""],.card-9[src = ""]{
     background: #8a8a8a;
 }
 
-.card-3,.card-10{
+.card-3[src = ""],.card-10[src = ""]{
     background: #a1a1a1;
 }
 
-.card-2,.card-11{
+.card-2[src = ""],.card-11[src = ""]{
     background: #acacac;
 }
 
-.card-6,.card-7{
+.card-6[src = ""],.card-7[src = ""]{
     background: #a4a4a4;
 }
 
