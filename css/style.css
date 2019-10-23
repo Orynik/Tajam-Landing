@@ -659,9 +659,9 @@ a.active:focus{
 
 .our-work-card-img{
     display: block;
-    flex-basis: 222px;
+    flex-basis: 250px;
     flex-grow: 1;
-    max-width: 350px;
+    max-width: 300px;
     height: 400px;
     padding: 0;
     margin: 0;  
