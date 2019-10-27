@@ -47,3 +47,57 @@ anchors.forEach(function(item) {
     }, animationTime / framesCount);
     });
 });
+
+let prevButton = document.getElementById("prev");
+let nextButton = document.getElementById("next");
+let slider = document.getElementById("review-slider");
+
+let icons = document.getElementsByClassName('review-img');
+
+let n = 965;
+let q = 1920;
+
+let iconCount = 2;
+
+
+prevButton.onclick = () =>{
+    slidePrev();
+    iconPrev();
+}
+
+nextButton.onclick = () =>{
+    slideNext();
+    iconNext();
+}
+
+function slidePrev(){
+    let prevBuf = q - n;
+    q = prevBuf;
+    slider.style.transform = "translate3d("+ -1 * prevBuf +"px, 0px, 0px)";
+    nextButton.classList.remove('disabled');
+    if(prevBuf == -10){
+        prevButton.classList.add('disabled');
+    }
+}
+
+function iconPrev(){
+    icons[iconCount].classList.remove('active');
+    iconCount -= 1;
+    icons[iconCount].classList.add('active');
+}
+
+function iconNext(){
+    icons[iconCount].classList.remove('active');
+    iconCount += 1;
+    icons[iconCount].classList.add('active');
+}
+
+function slideNext(){
+    let nextBuf = q + n;
+    q = nextBuf;
+    slider.style.transform = "translate3d("+ -1 * nextBuf +"px, 0px, 0px)";
+    prevButton.classList.remove('disabled');
+    if(nextBuf == 3850){
+        nextButton.classList.add('disabled');
+    }
+}

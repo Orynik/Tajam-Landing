@@ -19,7 +19,7 @@
                     </a>
                 </div>
                 <ul class ="navigation-list">
-                    <li class="navigation-item"><a class = "active">HOME</a></li>
+                    <li class="navigation-item"><a class = "active-link">HOME</a></li>
                     <li class="navigation-item"><a href="#about-us">ABOUT</a></li>
                     <li class="navigation-item"><a href="#expertise">EXPERTSE</a></li>
                     <li class="navigation-item"><a href="#team">TEAMS</a></li>
@@ -253,24 +253,78 @@
             </section>
             <section class = "review" id = "review">
                 <h2 class = "visually-hidden">review</h2>
-                <div class = "reviewer-text">
-                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean<br>
-                    sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis<br>
-                    sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus<br>
-                    a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
-                </div>
-                <div class = "reviewer-info">
-                    <span class = "reviewer-name">JANE GALADRIEL</span><br>
-                    <span class = "reviewer-post">CEO TENGKURTEP</span>
+                <div class = "viewport-review wrapper">
+                    <ul class = "review-slider" id = "review-slider">
+                        <li class="slide">
+                                <div class = "reviewer-text">
+                                    This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean<br>
+                                    sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis<br>
+                                    sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus<br>
+                                    a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+                                </div>
+                                <div class = "reviewer-info">
+                                    <span class = "reviewer-name">JANE GALADRIEL</span><br>
+                                    <span class = "reviewer-post">CEO TENGKURTEP</span>
+                                </div>
+                        </li>
+                        <li class="slide">
+                            <div class = "reviewer-text">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean<br>
+                                sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis<br>
+                                sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus<br>
+                                a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+                            </div>
+                            <div class = "reviewer-info">
+                                <span class = "reviewer-name">JANE GALADRIEL</span><br>
+                                <span class = "reviewer-post">CEO TENGKURTEP</span>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class = "reviewer-text">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean<br>
+                                sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis<br>
+                                sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus<br>
+                                a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+                            </div>
+                            <div class = "reviewer-info">
+                                <span class = "reviewer-name">JANE GALADRIEL</span><br>
+                                <span class = "reviewer-post">CEO TENGKURTEP</span>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class = "reviewer-text">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean<br>
+                                sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis<br>
+                                sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus<br>
+                                a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+                            </div>
+                            <div class = "reviewer-info">
+                                <span class = "reviewer-name">JANE GALADRIEL</span><br>
+                                <span class = "reviewer-post">CEO TENGKURTEP</span>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class = "reviewer-text">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean<br>
+                                sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis<br>
+                                sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus<br>
+                                a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
+                            </div>
+                            <div class = "reviewer-info">
+                                <span class = "reviewer-name">JANE GALADRIEL</span><br>
+                                <span class = "reviewer-post">CEO TENGKURTEP</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class = "reviewer-avatar">
-                    <span class = "swap-left"></span>
-                    <img src="img/PhotoIcon/Testimonials1.jpg" alt="">
-                    <img src="img/PhotoIcon/Testimonials2.jpg" alt="">
-                    <img class = "active" src="img/PhotoIcon/Testimonials3.jpg" alt="">
-                    <img src="img/PhotoIcon/Testimonials4.jpg" alt="">
-                    <img src="img/PhotoIcon/Testimonials5.jpg" alt="">
-                    <span class = "swap-right"></span>
+                    <span class = "swap-left" id = "prev"></span>
+                    <img class = "review-img" src="img/PhotoIcon/Testimonials1.jpg" alt="Testimonials1" id = "T1">
+                    <img class = "review-img" src="img/PhotoIcon/Testimonials2.jpg" alt="Testimonials2" id = "T2">
+                    <img class = "review-img active" src="img/PhotoIcon/Testimonials3.jpg" alt="Testimonials3" id = "T3">
+                    <img class = "review-img" src="img/PhotoIcon/Testimonials4.jpg" alt="Testimonials4" id = "T4">
+                    <img class = "review-img" src="img/PhotoIcon/Testimonials5.jpg" alt="Testimonials5" id = "T5">
+                    <span class = "swap-right" id = "next"></span>
                 </div>
             </section>
             <div class = "wrapper">
