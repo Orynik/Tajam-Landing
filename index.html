@@ -8,27 +8,27 @@
     <link rel = "stylesheet" href = "css/style.css">
     <title>Tajam</title>
 </head>
-<body>
-    <header>
-        <div class = "wrapper">
-            <nav>
-                <div class = "navigation-logo">
-                    <a class = "logo-link" href = "#">
-                        <img src = "img/Other/NavbarLogo.png" width="44" height= "50" alt = "Tajam-Logo">
-                        <span class = "logo-name">tajam</span>
-                    </a>
-                </div>
-                <ul class ="navigation-list">
-                    <li class="navigation-item"><a class = "active-link">HOME</a></li>
-                    <li class="navigation-item"><a href="#about-us">ABOUT</a></li>
-                    <li class="navigation-item"><a href="#expertise">EXPERTSE</a></li>
-                    <li class="navigation-item"><a href="#team">TEAMS</a></li>
-                    <li class="navigation-item"><a href="#our-works">WORKS</a></li>
-                    <li class="navigation-item"><a href="#review">PEOPLE SAY</a></li>
-                    <li class="navigation-item"><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
+<body id = "home">
+    <nav>
+        <div class = "navigation">
+            <div class = "nav-wrapper">
+                <a class = "logo-link" href = "#">
+                    <img src = "img/Other/NavbarLogo.png" width="44" height= "50" alt = "Tajam-Logo">
+                    <span class = "logo-name">tajam</span>
+                </a>
+            </div>
+            <ul class ="navigation-list">
+                <li class="navigation-item"><a href="#home">HOME</a></li>
+                <li class="navigation-item"><a href="#about-us">ABOUT</a></li>
+                <li class="navigation-item"><a href="#expertise">EXPERTSE</a></li>
+                <li class="navigation-item"><a href="#team">TEAMS</a></li>
+                <li class="navigation-item"><a href="#our-works">WORKS</a></li>
+                <li class="navigation-item"><a href="#review">PEOPLE SAY</a></li>
+                <li class="navigation-item"><a href="#contact">CONTACT</a></li>
+            </ul>
         </div>
+    </nav>
+    <header>
         <div class = "wrapper">
             <ul class="slider">
                 <li>
@@ -318,13 +318,13 @@
                     </ul>
                 </div>
                 <div class = "reviewer-avatar">
-                    <span class = "swap-left" id = "prev"></span>
+                    <span class = "swap-left" id = "prev" onclick = "prev()"></span>
                     <img class = "review-img" src="img/PhotoIcon/Testimonials1.jpg" alt="Testimonials1" id = "T1">
                     <img class = "review-img" src="img/PhotoIcon/Testimonials2.jpg" alt="Testimonials2" id = "T2">
                     <img class = "review-img active" src="img/PhotoIcon/Testimonials3.jpg" alt="Testimonials3" id = "T3">
                     <img class = "review-img" src="img/PhotoIcon/Testimonials4.jpg" alt="Testimonials4" id = "T4">
                     <img class = "review-img" src="img/PhotoIcon/Testimonials5.jpg" alt="Testimonials5" id = "T5">
-                    <span class = "swap-right" id = "next"></span>
+                    <span class = "swap-right" id = "next" onclick = "next()"></span>
                 </div>
             </section>
             <div class = "wrapper">
