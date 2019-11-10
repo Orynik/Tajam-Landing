@@ -1187,6 +1187,22 @@ textarea{
     line-height: 26px;
     font-weight: 400;
     color: #fff;
+
+    transition: all ease-in-out 0.25s;
+    -webkit-transition: all ease-in-out 0.25s;
+    -moz-transition: all ease-in-out 0.25s;
+    -ms-transition: all ease-in-out 0.25s;
+    -o-transition: all ease-in-out 0.25s;
+}
+
+.footer-help a:hover{
+    color: #0cc5bc;
+}
+
+.footer-help a:active{
+    color:#1ad1c8;
+    opacity: 0.3;
+    outline: none;
 }
 
 .copyright{
